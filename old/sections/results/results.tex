@@ -1,0 +1,307 @@
+
+\subsection{Analysis of beam-on data}
+
+
+\begin{table}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccc}
+\hline
+Cut & Beam-off Events/h & Beam-on Events/h & Beam On/Beam Off Ratio \\
+\hline
+Before cuts & $1950.26 \pm 6.61$ & $2383.98 \pm 12.01$ & $1.22$ \\
+Max $\cos(\theta_{\mathrm{beam}})$ & $106.34 \pm 1.54$ & $217.53 \pm 3.63$ & $2.05$ \\
+Tail Length Density & $23.09 \pm 0.72$ & $28.96 \pm 1.32$ & $1.25$ \\
+Cut on $C_{140-150}$ & $6.65 \pm 0.39$ & $9.92 \pm 0.77$ & $1.49$ \\
+ROI Z close to vertex & $1.79 \pm 0.20$ & $3.87 \pm 0.48$ & $2.16$ \\
+N daughter particles & $0.81 \pm 0.13$ & $2.84 \pm 0.41$ & $3.53$ \\
+Vertex fiducial volume & $0.65 \pm 0.12$ & $2.48 \pm 0.39$ & $3.82$ \\
+Cut on $C_{40-50}$ & $0.56 \pm 0.11$ & $2.36 \pm 0.38$ & $4.21$ \\
+ROI Z size & $0.49 \pm 0.10$ & $2.12 \pm 0.36$ & $4.30$ \\
+Cut on $C_{0-10}$ & $0.45 \pm 0.10$ & $1.87 \pm 0.34$ & $4.19$ \\
+\hline
+\end{tabular}
+}
+\caption{Beam-on and beam-off events per hour with the corresponding ratio for various selection cuts, considering all the available time with the spill on.}
+\label{tab:onoff_ratio_alltps}
+\end{table}
+
+After defining the selection criteria as described in the previous section, the data collected with the beam on, where neutrino candidates are expected, 
+was analyzed and compared to the runs with beam off, where only background is expected. The number of events per hour after each stage of the selection is shown 
+in Table~\ref{tab:onoff_ratio_alltps}.
+The event rate per hour in the beam-on data is significantly higher than that observed in the beam-off data, indicating the presence of neutrino interactions related to beam activity. 
+However, the measured rate remains lower than the expectation from the Monte Carlo simulation. 
+This discrepancy can be attributed to the limited statistical sample as well as to systematic uncertainties arising from the neutrino flux (hadron production), interaction cross sections, beamline instrumentation, and detector response. 
+A detailed evaluation of these effects is beyond the scope of the present analysis, which is focused on neutrino identification as a proof of principle for the BSM physics program.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.69\linewidth]{sections/results/plots/output_test_full_time_all_tps/sig_bkg_mc_max_directionZ_directionZ2_spectrum_full_sig_time.png}
+    \caption{Distribution of $\cos(\theta_{\mathrm{beam}})_\text{max}$ comparing beam-on data with the stacked distributions of beam-off and Monte Carlo neutrinos.}
+    \label{fig:beam_on_maxZ_all_tps}
+\end{figure}
+
+A key cross-check is the comparison of the $\cos(\theta_{\mathrm{beam}})_\text{max}$ distribution with and without beam (Figure~\ref{fig:beam_on_maxZ_all_tps}), where a clear excess in the forward direction is visible with the beam on.
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.69\linewidth]{sections/results/plots/output_test_full_time_all_tps/sig_bkg_mc_energy_spectrum_full_sig_time.png}
+    \caption{Deposited Energy spectrum comparing beam-on data with the stacked distributions of beam-off and Monte Carlo neutrinos.}
+    \label{fig:beam_on_energy_all_tps}
+\end{figure}
+
+Additional distributions are used to check MC–data agreement, starting with the energy spectrum (Figure~\ref{fig:beam_on_energy_all_tps}), for which no cut is applied. %; the shapes appear compatible by eye, though the limited statistics preclude stronger statements. 
+For a broader overview, multiple variables are compared (Figs.~\ref{fig:all_tps_beam_on_tail_density}, 
+\ref{fig:all_tps_beam_on_energyDepositedInFifteenth10cm}, \ref{fig:all_tps_beam_on_distance_vertexZ_to_ROI_start},
+\ref{fig:all_tps_beam_on_numberOfPFParticles}, \ref{fig:all_tps_beam_on_vertexY}, \ref{fig:all_tps_beam_on_vertexZ}, 
+\ref{fig:all_tps_beam_on_energyDepositedInFifth10cm}, \ref{fig:all_tps_beam_on_ROI_Z_size}, \ref{fig:all_tps_beam_on_energyDepositedInFirst10cm})
+, where it is possible to get hints of a good agreement between the shape of the expected distributions and the data despite the low statistics available. 
+On the other hand, the expected number of neutrinos is significantly higher than the measured flux, but the errors on the normalization have to be considered in the wider context of the flux uncertainties. 
+
+
+
+
+After all the selections, the final number of events is 31 ($\text{N}_{\text{ON}}$)  within the 16.53 hours ($\text{T}_{\text{ON}}$) of beam on and 20 ($\text{N}_{\text{OFF}}$) in the 44.688 hours ($\text{T}_{\text{OFF}}$) of beam off, as reported in Table~\ref{tab:post_cut_numbers_all_tps}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.69\linewidth]{sections/results/plots/output_test_full_time_all_tps/sig_bkg_vertexZ_vs_vertexY_scatter.png}
+    \caption{Vertex position in the ZY plane for the spill-on and spill-off events that pass all selections, considering all the available spill on time.}
+    \label{fig:vertex_position_yz_all_tps}
+\end{figure}
+
+It is interesting to observe the position of the vertices in the detector for the events that pass all the selections (Figure \ref{fig:vertex_position_yz_all_tps}), where we see a certain preference in the lower part of the detector for the events with the beam on, while the cosmic events collected with the spill off tend to occur more in the upper section, as expected from the MC simulations.  
+One can also see a higher efficiency in the downstream region of the detector, justified by the APA 1 collection plane working not perfectly. 
+Standard Model particles different from neutrinos are expected to interact more in the upstream section of the detector, so the absence of this behavior is a hint confirming these events are neutrinos.
+
+
+
+\clearpage
+
+
+
+\subsection{Significance calculation} \label{chap:significance_method}
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+         & Number of events & Time (hours) & Hourly rate\\
+        \hline
+        Beam-on & 31 & 16.53 & 1.88 \\
+        \hline
+        Beam-off & 20 & 44.688 & 0.45\\
+        \hline
+    \end{tabular}
+    \caption{Observed number of events that pass all selection cuts, and total live time available.}
+    \label{tab:post_cut_numbers_all_tps}
+\end{table}
+
+
+An excess of events with the beam on is clearly visible by eye, but a precise calculation of its significance is needed.
+
+At first, the significance of the excess is simply computed using the basic significance formula for Poissonian-distributed events
+\begin{equation} \label{eq:basic_formula}
+    \chi^2 = 2 \left(  \mu(\theta) - \text{Data}_{\text{ON}} + \text{Data}_{\text{ON}} \ln \frac{\text{Data}_{\text{ON}}}{\mu(\theta)}\right) \, ,
+\end{equation}
+where $\mu(\theta) = \text{Data}_{\text{OFF}} \cdot \frac{\text{Time}_{\text{ON}}}{\text{Time}_{\text{OFF}}}$. 
+Using the number of events shown in Table~\ref{tab:post_cut_numbers_all_tps} we obtain a significance of $6.35\sigma$. 
+
+The simple approach only considers the case where the background rate is exactly the measured value $\frac{\text{Data}_{\text{OFF}}}{\text{Time}_{\text{OFF}}}$, but it can be interesting to use a different approach to explore the entire space of the signal and the background rates and to find the credible intervals for the experiment. 
+
+The idea is to find the optimal values for the neutrino and background rates by sampling the likelihood distribution, where the likelihood is defined as:
+\begin{equation}\label{eq:likelihood}
+    \mathcal{L}_{\text{Poisson}}
+    = \mathcal{L}_{\text{Poisson, ON}} \times \mathcal{L}_{\text{Poisson, OFF}}
+    = \frac{e^{-\text{Model}_{\text{ON}}}\,\text{Model}_{\text{ON}}^{\text{Data}_{\text{ON}}}}{\text{Data}_{\text{ON}}!}
+      \times
+      \frac{e^{-\text{Model}_{\text{OFF}}}\,\text{Model}_{\text{OFF}}^{\text{Data}_{\text{OFF}}}}{\text{Data}_{\text{OFF}}!}\,,
+\end{equation}
+where \(\text{Model}_{\text{ON}}=(\text{R}_{\text{neutrino}}+\text{R}_{\text{background}})\cdot \text{Time}_{\text{ON}}\) and \(\text{Model}_{\text{OFF}}=\text{R}_{\text{background}}\cdot \text{Time}_{\text{OFF}}\), and $\text{R}$ is defined as the event rate per hour.
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.69\linewidth]{sections/results/plots/significance/mcmc_contours_all.png}
+    \caption{Histogram of the sampled \(\log(\mathcal{L}_{\text{Poisson}})\) using the Monte Carlo method. Contours are drawn using the 0.68, 0.95, and 0.997 quantiles.}
+    \label{fig:mcmc_approach_all}
+\end{figure}
+ 
+The chosen approach samples the log-likelihood distribution (Eq.~\ref{eq:likelihood}) using a Markov Chain Monte Carlo (MCMC) method, using 14 walkers for $10^7$ steps. 
+The contours are then drawn using the 0.68, 0.95, and 0.997 quantiles (Figure~\ref{fig:mcmc_approach_all}). Assuming  flat priors these correspond, in a purely Bayesian way, to the credible regions at 68\%, 95\%, and 99.7\% probability. % without the need of introducing any Gaussian approximation.
+The most probable values are \(\text{R}_{\text{neutrino}}=1.429\) and \(\text{R}_{\text{background}}=0.455\), and the hypothesis \(\text{R}_{\text{neutrino}}=0\) falls outside of the credible region at 99.7\% probability, for every plausible true \(\text{R}_{\text{background}}\).
+\subsubsection{Impact of systematic Uncertainties}
+The following fractional systematic uncertainties are considered:
+\begin{itemize}
+    \item Neutrino flux: $\sigma_{\rm flux} = 20\%$
+    \item Neutrino cross-section: $\sigma_{\rm xsec} = 20\%$
+    \item Detection efficiency: $\sigma_{\rm eff} = 10\%$
+    \item Angular resolution: $\sigma_{\rm \theta} = 10\%$
+    \item Detector effects: $\sigma_{\rm det} = 10\%$
+    \item Background modeling: $\sigma_{\rm bkg} = 10\%$
+\end{itemize}
+
+The total combined uncertainties are evaluated in quadrature:
+\begin{align}
+    \sigma_{\rm signal} &= \sqrt{\sigma_{\rm flux}^2 + \sigma_{\rm xsec}^2 + \sigma_{\rm eff}^2 + \sigma_\theta^2 + \sigma_{\rm det}^2},\\
+    \sigma_{\rm bkg} &= \sqrt{\sigma_{\rm bkg}^2 + \sigma_{\rm det}^2}.
+\end{align}
+
+The resulting 2D likelihood contours are shown in Figure~\ref{fig:likelihood_contours}. The black contours correspond to the no-systematics case, while the red dashed contours include quadrature systematic uncertainties.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\textwidth]{sections/results/plots/significance/2D_Contours_WSys.png}
+\caption{Two-dimensional likelihood contours for $R_\nu$ and $R_{\rm bkg}$. Levels correspond to 68\%, 95\%, and 99.7\% confidence regions. Black: no systematics; red dashed: quadrature systematics. The markers indicate the maximum likelihood estimates.}
+\label{fig:likelihood_contours}
+\end{figure}
+
+The comparison between the no-systematics and quadrature-systematics contours shows that including reasonable systematic uncertainties slightly broadens the contours. However, the difference is small, indicating that the measurement is dominated by statistical uncertainty rather than systematics.
+
+\subsection{Event displays}
+
+These searches can really benefit from a visual confirmation with the event displays, to better understand the nature of the events that were selected with the analysis. Many events that pass the selection look like neutrino events, with clean vertices inside the detector an the correct direction parallel to the Z coordinate (Figure \ref{fig:ev_display}). 
+Among the events, cosmic events are also present, as expected. These events are easy to identify because they usually have shapes and topologies different from the expected neutrino ones (Figure \ref{fig:ev_display_err}). 
+It is interesting to observe that certain events have a clear muon track preceding the shower. However, since the shower happens near the beginning of the APA2, the track in the APA1 is lost and the events are identified as neutrinos (Figure \ref{fig:ev_display_broken1}). 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.48\linewidth]{sections/results/plots/ev_display/_full_collection_view_34_2914.png}
+    \includegraphics[width=0.48\linewidth]{sections/results/plots/ev_display/_full_collection_view_12_32490.png}
+    \includegraphics[width=0.48\linewidth]{sections/results/plots/ev_display/_full_collection_view_34_42646.png}
+    \includegraphics[width=0.48\linewidth]{sections/results/plots/ev_display/_full_collection_view_34_68237.png}
+    \includegraphics[width=0.48\linewidth]{sections/results/plots/ev_display/_full_collection_view_12_76250.png}
+    \includegraphics[width=0.48\linewidth]{sections/results/plots/ev_display/_full_collection_view_34_76517.png}
+    \caption{Event displays of neighboring APAs’ collection view planes containing neutrino candidates.}
+    \label{fig:ev_display}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.48\linewidth]{sections/results/plots/ev_display/_full_collection_view_34_80655.png}
+    \includegraphics[width=0.48\linewidth]{sections/results/plots/ev_display/_full_collection_view_34_24584.png}
+    \caption{Event displays of neighboring APAs’ collection view planes containing cosmic events.}
+    \label{fig:ev_display_err}
+\end{figure}
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.48\linewidth]{sections/results/plots/ev_display/_full_collection_view_12_73228.png}
+    \includegraphics[width=0.48\linewidth]{sections/results/plots/ev_display/_full_collection_view_12_61403.png}
+    \caption{Event displays of neighboring APAs’ collection view planes containing cosmic events. The signal from the APA 1 is enhanced to make the activity more visible.}
+    \label{fig:ev_display_broken1}
+\end{figure}
+\clearpage
+
+\subsection{High TP vs Low TP validation}
+\begin{table}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccc}
+\hline
+Cut & Beam-off Events/h & Beam-on Events/h (High TP) & Beam-on Events/h (Low TP) \\
+\hline
+Before cuts & $1950.26 \pm 6.61$ & $2911.81 \pm 18.99$ & $1880.33 \pm 14.90$ \\
+Max $\cos(\theta_{\mathrm{beam}})$ & $106.34 \pm 1.54$ & $330.11 \pm 6.39$ & $110.11 \pm 3.61$ \\
+Tail Length Density & $23.09 \pm 0.72$ & $35.91 \pm 2.11$ & $22.33 \pm 1.62$ \\
+Cut on $C_{140-150}$ & $6.65 \pm 0.39$ & $11.64 \pm 1.20$ & $8.27 \pm 0.99$ \\
+ROI Z close to vertex & $1.79 \pm 0.20$ & $4.09 \pm 0.71$ & $3.66 \pm 0.66$ \\
+N daughter particles & $0.81 \pm 0.13$ & $2.97 \pm 0.61$ & $2.72 \pm 0.57$ \\
+Vertex fiducial volume & $0.65 \pm 0.12$ & $2.60 \pm 0.57$ & $2.36 \pm 0.53$ \\
+Cut on $C_{40-50}$ & $0.56 \pm 0.11$ & $2.60 \pm 0.57$ & $2.13 \pm 0.50$ \\
+ROI Z size 10 cm & $0.49 \pm 0.10$ & $2.48 \pm 0.55$ & $1.77 \pm 0.46$ \\
+Cut on $C_{0-10}$ & $0.45 \pm 0.10$ & $2.10 \pm 0.51$ & $1.65 \pm 0.44$ \\
+\hline
+\end{tabular}
+}
+\caption{Beam-on and beam-off events per hour for various selection cuts, comparing high TP and low TP rate periods.}
+\label{tab:onoff_ratio_high_low_tps}
+\end{table}
+
+To validate the results obtained in the previous sections, the same analysis was performed splitting the beam-on data into two different periods: high TP rate and low TP rate.
+This is important because showing that the results are consistent in both periods increases the confidence that the observed excess is indeed due to neutrino interactions and not related to other unknown effects beam related background.
+
+The number of events per hour after each stage of the selection is shown in Table~\ref{tab:onoff_ratio_high_low_tps}. 
+Before any cut is applied, the number of events per hour in the low TP period is compatible with the beam-off rate, as expected, while in the high TP period it is ~50\% higher, indicating the presence of an additional contribution related with the beam activity.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.49\linewidth]{sections/results/plots/output_test_full_time/sig_bkg_mc_max_directionZ_directionZ2_spectrum_full_sig_time.png}
+    \includegraphics[width=0.49\linewidth]{sections/results/plots/full_time_high_tps/sig_bkg_mc_max_directionZ_directionZ2_spectrum_full_sig_time.png}\\
+    % \includegraphics[width=0.49\linewidth]{sections/results/plots/sig_bkg_mc_max_directionZ_directionZ2_spectrum_full_sig_time_low.png}
+    % \includegraphics[width=0.49\linewidth]{sections/results/plots/sig_bkg_mc_max_directionZ_directionZ2_spectrum_full_sig_time_high.png}
+    
+    \caption{Distribution of $\cos(\theta_{\mathrm{beam}})_\text{max}$ with the low TP rate (left) and the high TP rate (right). 
+    The final bin contains the same number of events in both cases because the binning in the plot is wider than the real cut applied, hiding the tiny difference. 
+    }
+    \label{fig:max_cos_theta_high_low}
+\end{figure}
+
+After applying all the selection cuts, the rates of events per hour in both beam-on periods are compatible within the uncertainties, showing that the selection is capable of removing the additional contribution. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.69\linewidth]{sections/results/plots/full_time_high_tps/sig_bkg_vertexZ_vs_vertexY_scatter.png}
+    \caption{Vertex position in the ZY plane for the spill-on and spill-off events that pass all selections, considering the time period with a visible increase in the TP rate corresponding to the beam spill.}
+    \label{fig:vertex_position_yz_high_tps}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.69\linewidth]{sections/results/plots/sig_bkg_vertexZ_vs_vertexY_scatter.png}
+    \caption{Vertex position in the ZY plane for the spill-on and spill-off events that pass all selections.}
+    \label{fig:vertex_position_yz}
+\end{figure}
+
+As a comparison the vertex positions in the ZY plane are plotted, and even in this case it is possible to see that the vertices are evenly distributed in the volume along Z and in the lower part of the detector (Figure \ref{fig:vertex_position_yz_high_tps} and \ref{fig:vertex_position_yz}).
+
+The distributions for the other variables of interest are shown, to highlight the fact that the events behave similarly between the time with the high TP rate (Figure \ref{fig:high_tps_beam_on_tail_density}
+\ref{fig:high_tps_beam_on_energyDepositedInFifteenth10cm}
+\ref{fig:high_tps_beam_on_distance_vertexZ_to_ROI_start}
+\ref{fig:high_tps_beam_on_numberOfPFParticles}
+\ref{fig:high_tps_beam_on_vertexY}
+\ref{fig:high_tps_beam_on_vertexZ}
+\ref{fig:high_tps_beam_on_energyDepositedInFifth10cm}
+\ref{fig:high_tps_beam_on_ROI_Z_size}
+\ref{fig:high_tps_beam_on_energyDepositedInFirst10cm}
+) and the low TP rate (Figure \ref{fig:beam_on_tail_density}
+\ref{fig:beam_on_energyDepositedInFifteenth10cm}
+\ref{fig:beam_on_distance_vertexZ_to_ROI_start}
+\ref{fig:beam_on_numberOfPFParticles}
+\ref{fig:beam_on_vertexY}
+\ref{fig:beam_on_vertexZ}
+\ref{fig:beam_on_energyDepositedInFifth10cm}
+\ref{fig:beam_on_ROI_Z_size}
+\ref{fig:beam_on_energyDepositedInFirst10cm}).
+
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+         & Number of events & Time (hours) & Hourly rate\\
+        \hline
+        Beam-on & 14 & 8.463 & 1.65 \\
+        \hline
+        Beam-off & 20 & 44.688 & 0.45\\
+        \hline
+    \end{tabular}
+    \caption{Observed number of events that pass all selection cuts, considering the full beam off data and only the beam on time with a low TP rate.}
+    \label{tab:post_cut_numbers_low_tps}
+\end{table}
+
+Finally, it can be interesting to compute the significance of the excess only considering the low TP rate period, where the number of events that pass all selection cuts is 14 ($\text{N}_{\text{ON}}$) within the 8.463 hours ($\text{T}_{\text{ON}}$) of beam on, as reported in Table~\ref{tab:post_cut_numbers_low_tps}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.69\linewidth]{sections/results/plots/significance/mcmc_contours_low.png}
+    \caption{Histogram of the sampled \(\log(\mathcal{L}_{\text{Poisson}})\) using the Monte Carlo method. Contours are drawn using the 0.68, 0.95, and 0.997 quantiles.}
+    \label{fig:mcmc_approach}
+\end{figure}
+
+Applying the same statistical method explained in Section \ref{chap:significance_method}, the significance of the excess is computed using Eq.~\ref{eq:basic_formula} obtaining $3.85\sigma$. 
+Then, again following the strategy explained previously, the likelihood is sampled using a MCMC method and the contours are drawn using the 0.68, 0.95, and 0.997 quantiles. Even with the reduced statistics, the hypothesis \(\text{R}_{\text{neutrino}}=0\) falls outside of the credible region at 99.7\% probability, for every plausible true \(\text{R}_{\text{background}}\).. 
+
+
+\clearpage

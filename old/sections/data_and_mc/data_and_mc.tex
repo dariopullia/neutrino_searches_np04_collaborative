@@ -1,0 +1,49 @@
+The data samples used for the analysis were recorded under the beam configurations described in section~\ref{sec:beam}.
+The available data comprises 2.5 days of data collected under the muon beam configuration GIF++ (Gamma Irradiation Facility Plus Plus), where the highest neutrino flux is anticipated. Additionally, there are several days of data collected under the electron beam configuration (w133), and 15 hours of data collected with the SPS beam turned off, as detailed in Table \ref{tab:data_table}. Data analysis with the other configuration w133 is ongoing.
+
+% \begin{table}[htbp]
+% \centering
+% \resizebox{\textwidth}{!}{%
+% \begin{tabular}{|c|c|c|c|c|}
+% \hline
+% \textbf{Run ID} & \textbf{Wobbling Configuration} & \textbf{PoT Integral} $\mathbf{(\times  10^{16})}$ & \textbf{Runtime (h)} & \textbf{Duty Cycle Time (h)} \\
+% \hline
+% 029424 & GIF++   & 1.9380 & 28.0480 & 7.6400  \\
+% 029425 & GIF++   & 1.9989 & 33.1793 & 8.4560  \\
+% 029917 & w133    & 0.3337 & 5.4400  & 1.5013  \\
+% 029918 & w133    & 3.4738 & 57.8593 & 15.2760 \\
+% 031036 & No beam & 0.0000 & 14.9960 & 0.0000  \\
+% 031107 & w133    & 3.5627 & 62.6143 & 15.5640 \\
+% 032176 & w133    & 1.0307 & 14.5440 & 4.2360  \\
+% 032177 & w133    & 2.9234 & 47.1280 & 11.8413 \\
+% \hline
+% \end{tabular}%
+% }
+% \caption{Summary of data collected with the ADC Simple Window trigger algorithm, as described in section \ref{chap:trigger}. Run 031036 was recorded in absence of beam to serve as an estimate of the cosmic background.}
+% \label{tab:data_table}
+% \end{table}
+
+\begin{table}[htbp]
+\centering
+\begin{tabularx}{\textwidth}{@{} l l c c c @{}}
+\toprule
+Run ID & Wobbling & PoT Integral $(\times 10^{16})$ & Runtime (h) & Duty Cycle Time (h) \\
+       & Configuration &  &  &    \\
+\midrule
+029424 & GIF++   & 1.9424 & 28.0480 & 7.6400  \\
+029425 & GIF++   & 2.1166 & 33.1793 & 8.8987  \\
+029917 & w133    & 0.3162 & 5.4400  & 1.4227  \\
+029918 & w133    & 3.4738 & 57.8593 & 15.2760 \\
+031036 & No beam & 0.0000 & 14.9960 & 0.0000  \\
+031107 & w133    & 3.5627 & 62.6143 & 15.5640 \\
+032176 & w133    & 1.0307 & 14.5440 & 4.2360  \\
+032177 & w133    & 2.9234 & 47.1280 & 11.8413 \\
+\bottomrule
+\end{tabularx}
+\caption{Summary of data collected with the ADC Simple Window trigger algorithm, as described in Section~\ref{chap:trigger}. Run 031036 was recorded in the absence of a beam to serve as an estimate of the cosmic background.}
+\label{tab:data_table}
+\end{table}
+
+The dedicated trigger, described in section~\ref{chap:trigger}, was developed towards the end of the ProtoDUNE Horizontal Drift operation. Consequently, the time available to collect data with the trigger and the active beam was quite limited. Data taken with different magnet configurations were approved once a few ``neutrino-like" candidate events were identified in the event display, and proved to be a successful proof of concept for the analysis. Due to minor inconsistencies in the trigger readout window between the GIF++ and electron beam (w133) configurations, only the former is used in this analysis, as reconstruction of the w133 runs is still incomplete.  %The latter requires modifications to the reconstruction process in order to include trigger ensure compatibility with the Monte Carlo simulation.
+
+% \textcolor{blue}{The comparison between the beam configurations and the predicted event rates will demonstrate that the T2 target is indeed the source of the neutrino events, and that the beam predictions can be trusted.} (\textcolor{red}{Need to be addressed properly. To my mind (Hamza) a thorough explanation should be present in \textit{Motivations}. Then, a short phrase could be more than welcome here, citing the section.}).

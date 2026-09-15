@@ -1,0 +1,8 @@
+N_on (signal candidates): 60
+N_off (background candidates): 30
+T_on (hours): 16.5387
+T_off (hours): 44.6886
+Expected background in on-window (mu): 11.102630200990856
+Test statistic: 104.66476363346212
+P-value (one-sided, 1 dof): 7.232534555501038e-25
+Significance (sigma equivalent): 10.23057982880062

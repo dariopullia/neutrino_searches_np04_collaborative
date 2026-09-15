@@ -1,0 +1,17 @@
+\begin{tabular}{|c|c|c|c|}
+\hline
+Cut & Signal Events & Background Events & MC Events \\
+\hline
+Initial & 3566.82 $\pm$ 21.02 & 2064.42 $\pm$ 6.80 & 23.19 \\
+Neutrino PFParticle in slice & 3347.37 $\pm$ 20.36 & 1954.79 $\pm$ 6.61 & 18.37 \\
+Vertex fiducial volume & 1340.11 $\pm$ 12.88 & 1144.34 $\pm$ 5.06 & 16.45 \\
+N daughter particles & 605.22 $\pm$ 8.66 & 568.02 $\pm$ 3.57 & 12.52 \\
+Max $\cos(\theta_{{\mathrm{{beam}}}})$ & 80.87 $\pm$ 3.16 & 54.47 $\pm$ 1.10 & 8.12 \\
+Cut on $C_{0-10}$ & 30.59 $\pm$ 1.95 & 22.09 $\pm$ 0.70 & 6.99 \\
+Cut on $C_{40-50}$ & 21.42 $\pm$ 1.63 & 15.91 $\pm$ 0.60 & 6.00 \\
+Cut on $C_{140-150}$ & 15.23 $\pm$ 1.37 & 8.62 $\pm$ 0.44 & 4.83 \\
+ROI Z size & 12.26 $\pm$ 1.23 & 5.37 $\pm$ 0.35 & 4.67 \\
+ROI Z close to vertex & 8.05 $\pm$ 1.00 & 2.08 $\pm$ 0.22 & 3.73 \\
+Tail Length Density & 4.09 $\pm$ 0.71 & 0.67 $\pm$ 0.12 & 2.85 \\
+\hline
+\end{tabular}

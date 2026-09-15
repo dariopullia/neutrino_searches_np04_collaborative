@@ -1,0 +1,13 @@
+nwalkers: 100
+nsteps: 200000
+nburn (discarded): 20000
+R_beamOFF prior range (events/hour): [0.001, 3.0]
+R_nu prior range (events/hour): [0.001, 10.0]
+R_beamOFF posterior median: 0.686121662630734
+R_beamOFF posterior mode: 0.675775
+R_nu posterior median: 2.5767503959974096
+R_nu posterior mode: 2.450755
+R_nu 68% credible interval: [1.9848416109648788, 3.2442119822396718]
+R_nu 95% credible interval: [1.4739935619875224, 3.9674338283801887]
+MCMC significance approx (R_nu_median / R_nu_std): 4.042734759557967
+Simple-formula significance (sigma equivalent, for comparison): 6.443983118915203

@@ -1,0 +1,32 @@
+Best parameters:
+vertex_z_min: 24.36498539532957
+vertex_y_max: 366.7380546577019
+num_pf_particles_min: 5.34076772766581
+direction_z_max: 0.951937951825192
+energy_first10cm_min: 1214.5855218860283
+energy_fifth10cm_min: 856.2852655428724
+energy_fifteenth10cm_min: 2575.78781843139
+roi_z_size_min: 25.687323083093016
+roi_z_vertex_distance_max: 28.95056826146129
+tail_length_density_max: 0.25099518628154516
+
+Number of MC events after cuts normalized: 3.0678147918153127
+Number of off spill data events after cuts normalized: 0.2461477871313937
+MC/off spill data ratio after cuts: 12.463304373228889
+Efficiency: 0.13231225296442686
+Purity: 0.9257240293855014
+F1 Score: 0.2315320069728822
+Significance: 183.4294814894406
+Number of MC events after cuts absolute: 1339
+Number of off spill data events after cuts absolute: 11
+
+Default cuts:
+Number of MC events after cuts normalized: 2.8455757815045697
+Number of off spill data events after cuts normalized: 0.6713121467219828
+MC/off spill data ratio after cuts: 4.238826595644837
+Efficiency: 0.12272727272727274
+Purity: 0.8091175606325042
+F1 Score: 0.21312731042171662
+Significance: 98.4769350922677
+Number of MC events after cuts absolute: 1242
+Number of off spill data events after cuts absolute: 30

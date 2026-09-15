@@ -1,0 +1,115 @@
+ \documentclass[a4paper,11pt]{article}
+% \documentclass[aps, prd, preprint]{revtex4-2}
+%\documentclass[preprint,11pt]{elsarticle}
+%\documentclass[a4paper,11pt]{article}
+%\documentclass{revtex4-2}
+% \documentclass[11pt]{elsarticle}
+\usepackage[left=1.2in, right=1.2in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{lineno}
+\usepackage{siunitx}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\linenumbers
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage{authblk} % Author list
+
+%\usepackage[style=ieee, sorting=none, backend=biber, doi=false, isbn=false, maxnames=4, url=false, citestyle=numeric-comp, dashed=false]{biblatex}
+%\newcommand*{\bibtitle}{} 
+%\renewcommand*{\bibfont}{\small}
+%\addbibresource{references.bib}
+\title {Neutrino Detection in ProtoDUNE-HD: Proof of Principle for Establishing a Beam-Dump Facility for BSM Searches Using ProtoDUNE Detectors at SPS, CERN: Analysis Note}
+
+\author[a]{H. Amar}
+\author[b]{A. Chatterjee}
+\author[c]{P. Coloma}
+\author[b]{C. Hasnip}
+\author[a]{J. Hernandez-Garcia}
+\author[a]{J. López-Pavón}
+\author[a]{J. Martín-Albo}
+\author[a]{L. Molina-Bueno}
+\author[b]{D. Pullia}
+\author[b]{F.Resnati}
+\author[b]{A.De.Roeck}
+\author[b,e]{C. Touramanis}
+\author[d]{S. Urrea}
+\author[a, b, c]{the ProtoDUNE-BSM collaboration}
+
+\affil[a]{Instituto de Física Corpuscular (IFIC), CSIC-Universitat de València, 46980 Paterna, Valencia, Spain.}
+\affil[b]{European Organization for Nuclear Research (CERN), CH-1211, Geneva, Switzerland}
+\affil[c]{Instituto de Física Teórica UAM-CSIC, Calle Nicolás Cabrera 13-15, Cantoblanco E-28049 Madrid, Spain}
+\affil[d]{P\^ole Th\'eorie, Laboratoire de Physique des 2 Infinis Ir\`ene Joliot-Curie (UMR 9012), CNRS/IN2P3, 15 Rue Georges Clemenceau, 91400 Orsay, France}
+\affil[e]{University of Liverpool, The Oliver Lodge, University of Liverpool, Oxford St, Liverpool L69 7ZE, United Kingdom}
+\begin{document}
+\maketitle
+
+\input{sections/abstract/abstract}
+\newpage
+\tableofcontents
+
+\section{Introduction}
+\input{sections/introduction/introduction}
+
+%\section{Motivations}
+%\input{sections/motivation/motivation}
+
+\section{Experimental setup}
+\input{sections/exp_setup/experimental_and_beam_setup}
+%\section{Neutrino Monte Carlo simulation}\label{chap:montecarlo_samples}
+%\section{NP04 Signal and Background Samples}\label{chap:montecarlo_samples}
+\section{Monte Carlo Samples}\label{chap:montecarlo_samples}
+\input{sections/mc/mc}
+\section{Trigger} \label{chap:trigger}
+\input{sections/trigger/trigger}
+
+\section{Datasets} \label{chap:datasets}
+\input{sections/data_and_mc/data_and_mc}
+
+
+% \section{Reconstruction}
+% \input{sections/reconstruction/reconstruction}
+
+\section{Analysis}
+\input{sections/analysis/analysis}
+
+\clearpage
+\section{Results}
+\input{sections/results/results}
+
+\section{Summary and Conclusions}
+\input{sections/conclusion/conclusion}
+\section{Acknowledgments}
+\input{sections/ack/ack}
+
+\bibliographystyle{elsarticle-num}
+\bibliography{references}
+
+\clearpage
+
+\appendix
+\section{Beam off vs Monte Carlo}
+\input{sections/appendix/mc_vs_beam_off}
+\clearpage
+\section{Beam off vs beam on all time included}
+\input{sections/appendix/beam_on_vs_off_combined}
+\clearpage
+\section{Beam off vs beam only low TP rate}
+\input{sections/appendix/beam_on_vs_beam_off}
+\clearpage
+\section{Beam off vs beam only high TP rate}
+\input{sections/appendix/beam_on_vs_off_high_tps}
+\clearpage
+\section{w133 MC expectations}
+\input{sections/appendix/w133_mc_predictions}
+\clearpage
+\section{Cut Optimization}
+\input{sections/appendix/cut_optimization}
+\clearpage
+\section{Changes from v1}
+\input{sections/appendix/changes_from_v1}
+\clearpage
+\end{document}
